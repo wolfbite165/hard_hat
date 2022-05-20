@@ -1,0 +1,189 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x6E01B248E08979989183af8271b55CF155C9a35b",
+    "txHash": "0xff936f4573d5ee3c726476351827d4e5534c7fd88be2b54255888d3f450b16aa"
+  },
+  "proxies": [
+    {
+      "address": "0x641891F060D9dBb3D8B1924b7e5026e97c16AFE0",
+      "txHash": "0x3e095bcad606d5d8ddc359303f9fe945b885addf2a2b3077b6864d6bd47a45c8",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "d85ce6b2246b9af22c44b849fa6ebed30ffad21fce3808e5f4646dbd139f0888": {
+      "address": "0xa5714519A6D0d716f367C292bF294fd436C69e2E",
+      "txHash": "0x170ae13772fb71ef986fb1864aa293f5b89b977df3541ae3e934c2c6e61181e6",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "BVT",
+            "type": "t_contract(IERC20)5351",
+            "src": "../project:/contracts/contract/claim_test.sol:10"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "BVG",
+            "type": "t_contract(IBEP20)34779",
+            "src": "../project:/contracts/contract/claim_test.sol:11"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "cattle",
+            "type": "t_contract(ICOW)35026",
+            "src": "../project:/contracts/contract/claim_test.sol:12"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "box",
+            "type": "t_contract(IBOX)35079",
+            "src": "../project:/contracts/contract/claim_test.sol:13"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "planet",
+            "type": "t_contract(IPlanet721)35836",
+            "src": "../project:/contracts/contract/claim_test.sol:14"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "planetWhite",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/contract/claim_test.sol:15"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "cattleWhite",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/contract/claim_test.sol:16"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "planetAmount",
+            "type": "t_uint256",
+            "src": "../project:/contracts/contract/claim_test.sol:17"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "cattleAmount",
+            "type": "t_uint256",
+            "src": "../project:/contracts/contract/claim_test.sol:18"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)18732_storage)",
+            "src": "../project:/contracts/contract/claim_test.sol:26"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "bvgClaimAmount",
+            "type": "t_uint256",
+            "src": "../project:/contracts/contract/claim_test.sol:27"
+          },
+          {
+            "contract": "ClaimTest",
+            "label": "bvtClaimAmount",
+            "type": "t_uint256",
+            "src": "../project:/contracts/contract/claim_test.sol:28"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)5351": {
+            "label": "contract IERC20"
+          },
+          "t_contract(IBEP20)34779": {
+            "label": "contract IBEP20"
+          },
+          "t_contract(ICOW)35026": {
+            "label": "contract ICOW"
+          },
+          "t_contract(IBOX)35079": {
+            "label": "contract IBOX"
+          },
+          "t_contract(IPlanet721)35836": {
+            "label": "contract IPlanet721"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(UserInfo)18732_storage)": {
+            "label": "mapping(address => struct ClaimTest.UserInfo)"
+          },
+          "t_struct(UserInfo)18732_storage": {
+            "label": "struct ClaimTest.UserInfo",
+            "members": [
+              {
+                "label": "planetClaimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "cattleClaimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "boxClaimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "bvtClaimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "bvgClaimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}
