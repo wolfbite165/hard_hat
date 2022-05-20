@@ -1,0 +1,383 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "targetId",
+						"type": "uint256"
+					}
+				],
+				"name": "CompoundCattle",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "_compoundCattle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cattle",
+				"outputs": [
+					{
+						"internalType": "contract ICOW",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "target",
+						"type": "uint256[]"
+					}
+				],
+				"name": "compoundCattle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "compoundShred",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "item",
+				"outputs": [
+					{
+						"internalType": "contract ICattle1155",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "photo",
+				"outputs": [
+					{
+						"internalType": "contract IProfilePhoto",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "cattle_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "item_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "photo_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "stable_",
+						"type": "address"
+					}
+				],
+				"name": "setAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ids",
+						"type": "uint256"
+					}
+				],
+				"name": "setShredId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "shredId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stable",
+				"outputs": [
+					{
+						"internalType": "contract IStable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "starExp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "upgradeLimit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contract/compound.sol": "Compound"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0x652fee292f698d8dba81bf287cb71f1682f6483b67ebe601a5f7387dcfc30b34",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98c7bba29bcab7240cdaada7dd7cbe3529fec83314801270c46239e72a9e84d7",
+				"dweb:/ipfs/QmfHCc1KMygjXchXVwafWTkFjhbb2SQ3Cu5GzRTdV4CCCh"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+			"keccak256": "0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://88b812365459a042c2aab5c689ff723098e0e19cb372718d3dd028b3c406e4f6",
+				"dweb:/ipfs/QmTsLrMYzPjnB85pyAy85NNcBg64RPVueJARzwNg9xMyR1"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37e4df53c8d2e3c1062c1c7b2c17366db7de03bfd2559d340ca95c588aa49c2f",
+				"dweb:/ipfs/QmQ9vsG3o4wED3FRogiSUhdzJvZSjjYFtydzXvFEJtgZk4"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c",
+				"dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a"
+			]
+		},
+		"contracts/contract/compound.sol": {
+			"keccak256": "0x2328db4042f8153b206f1220bd34ff82349e00f51eea049a0d20011c36f042be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee4bc544d182e294a48bc66bb0b90470900a1e713b8b7fa1dce411096b7b4c1f",
+				"dweb:/ipfs/QmaKE3Ca5Y469bgLxrTGP5WkuN8L4GYRtyPbKfVAYbgFu7"
+			]
+		},
+		"contracts/interface/ICOW721.sol": {
+			"keccak256": "0xed3a980769b945c487ab7b7e8eb63dec918a4258a069b0fa6e39de3e4e1ae3cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0387087d334803fdca454b51d914069b76f937b976bc89ab46a9cd9f1ca3b833",
+				"dweb:/ipfs/QmVprjw2113cCYv5z6C4jjkPfJvuUuhZXKPzvZjrGD2NjC"
+			]
+		},
+		"contracts/interface/ICattle1155.sol": {
+			"keccak256": "0x586911a78f90320daceccdcb7d3163cef152e9a343e2332d27f555542316b2dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5b98748739434b65a1dceadc2bc87b552eae923cb09fc1c864d42b900563a8c",
+				"dweb:/ipfs/QmfJZSJPikqbJSAgGm9X9nu5gvs1jxfY1ZnwwSo5MvSfFg"
+			]
+		},
+		"contracts/interface/Iprofile_photo.sol": {
+			"keccak256": "0x6cf9a8d42663ff679a04f8d591b59dd0407c5d84637d38c8030a1705b8a1f3b8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c87b92db0e88f6aa01a2cdcdabca0d9701535b43dec67a74b1d2b502bcf0f47",
+				"dweb:/ipfs/Qmc7AYw7BSet8iWtjMQN6dkr2LuByyYPe7w5q3x9gzmDhU"
+			]
+		}
+	},
+	"version": 1
+}

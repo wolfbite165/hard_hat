@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId_",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId_",
+						"type": "uint256"
+					}
+				],
+				"name": "checkEnergy",
+				"outputs": [
+					{
+						"internalType": "uint256[2]",
+						"name": "",
+						"type": "uint256[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId_",
+						"type": "uint256"
+					}
+				],
+				"name": "checkGrow",
+				"outputs": [
+					{
+						"internalType": "uint256[2]",
+						"name": "",
+						"type": "uint256[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId_",
+						"type": "uint256"
+					}
+				],
+				"name": "checkLife",
+				"outputs": [
+					{
+						"internalType": "uint256[2]",
+						"name": "",
+						"type": "uint256[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId_",
+						"type": "uint256"
+					}
+				],
+				"name": "checkParents",
+				"outputs": [
+					{
+						"internalType": "uint256[2]",
+						"name": "",
+						"type": "uint256[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[2]",
+						"name": "parents_",
+						"type": "uint256[2]"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interface/ICOW721.sol": "IBOX"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interface/ICOW721.sol": {
+			"keccak256": "0x3666e3fdf6670fdf7cc47e884da76c4a2424c9d714d0169c11b8ff1f7419f5bd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://82272ffd4bca2eaa5606cbae7c89f1246d050c5520ce3b0e845aaec51e6d2d0b",
+				"dweb:/ipfs/QmUgGNChwRRrVeXB6XMSaaViY7ieVCw7ukvUNweLxPZV5x"
+			]
+		}
+	},
+	"version": 1
+}

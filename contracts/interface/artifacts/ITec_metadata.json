@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "list",
+						"type": "uint256[]"
+					}
+				],
+				"name": "checkUserExpBatch",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "out",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "getUserTecLevel",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "out",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "list",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getUserTecLevelBatch",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "out",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interface/ITec.sol": "ITec"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interface/ITec.sol": {
+			"keccak256": "0x19e506eeea1548f90490bbdbe2df8345b54c37c0d1dcca87aff9add959e564c4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4303672a91b4e034cb84158349f521546fe6a425dbb36333ee767576f9d2b792",
+				"dweb:/ipfs/QmeWihraom57Cj8R2GHXmNVgQ26bu8ZNNMeQiTKQQCFLtL"
+			]
+		}
+	},
+	"version": 1
+}

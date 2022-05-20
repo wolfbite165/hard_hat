@@ -1,0 +1,409 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "BVG",
+				"outputs": [
+					{
+						"internalType": "contract IERC20Upgradeable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BVT",
+				"outputs": [
+					{
+						"internalType": "contract IERC20Upgradeable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "itemId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "buyItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getList",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "lists",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "lefts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "pays",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "prices",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOnSaleList",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "item",
+				"outputs": [
+					{
+						"internalType": "contract ICattle1155",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "setItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "itemId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setItemAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "itemId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOnsale",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellLimit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "payWith",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price_",
+						"type": "uint256"
+					}
+				],
+				"name": "setShopInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "BVT_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "BVG_",
+						"type": "address"
+					}
+				],
+				"name": "setToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "shopInfo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "onSale",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "left",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "pay",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userBuyed",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contract/item_shop.sol": "ItemShop"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0x652fee292f698d8dba81bf287cb71f1682f6483b67ebe601a5f7387dcfc30b34",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98c7bba29bcab7240cdaada7dd7cbe3529fec83314801270c46239e72a9e84d7",
+				"dweb:/ipfs/QmfHCc1KMygjXchXVwafWTkFjhbb2SQ3Cu5GzRTdV4CCCh"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+			"keccak256": "0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://88b812365459a042c2aab5c689ff723098e0e19cb372718d3dd028b3c406e4f6",
+				"dweb:/ipfs/QmTsLrMYzPjnB85pyAy85NNcBg64RPVueJARzwNg9xMyR1"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+			"keccak256": "0x6777f3fccb5dab95a9088ef62c41bee0198fd92e50d7c94f0e3733788af4079e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf67f82ba68e13b306fa350fc0e2acaac3b0e90b2734a56e61302d79b408fb0b",
+				"dweb:/ipfs/QmVhMTANFDtZFpxdGk6SayfttDxEh23GrT8ttiFRoow7c2"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol": {
+			"keccak256": "0x3e26a49d2fa5ef8338b8a9467c91e54f417cb07e849b1cc0f4ebc4d2a147938e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca7bd5deecc4abd97f0218708c6e004953971cc62de68557fe0c6c8607f85a65",
+				"dweb:/ipfs/QmRw3dGdS6ksHZiqcPRknYvWXfYP2hTj21PhkLjXyEVEf6"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37e4df53c8d2e3c1062c1c7b2c17366db7de03bfd2559d340ca95c588aa49c2f",
+				"dweb:/ipfs/QmQ9vsG3o4wED3FRogiSUhdzJvZSjjYFtydzXvFEJtgZk4"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c",
+				"dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a"
+			]
+		},
+		"contracts/contract/item_shop.sol": {
+			"keccak256": "0xe6e0b746011480fc960c3d1ab3f39be2d67cac3f1fca2703486564217ee0eda4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://03a732c8659acf7829e6dba33883809cd931f7667ebe0a3169a8a263a6e2b5f5",
+				"dweb:/ipfs/QmYfoYvyYJaNewgy1Ax53VBzWYz3xnBMA5MVWN7p61RyAK"
+			]
+		},
+		"contracts/interface/ICattle1155.sol": {
+			"keccak256": "0x586911a78f90320daceccdcb7d3163cef152e9a343e2332d27f555542316b2dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5b98748739434b65a1dceadc2bc87b552eae923cb09fc1c864d42b900563a8c",
+				"dweb:/ipfs/QmfJZSJPikqbJSAgGm9X9nu5gvs1jxfY1ZnwwSo5MvSfFg"
+			]
+		}
+	},
+	"version": 1
+}

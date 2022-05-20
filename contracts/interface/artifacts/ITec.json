@@ -1,0 +1,129 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"checkUserExpBatch(address,uint256[])": "b6f07e24",
+			"getUserTecLevel(address,uint256)": "97daff97",
+			"getUserTecLevelBatch(address,uint256[])": "34dccdcd"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "list",
+					"type": "uint256[]"
+				}
+			],
+			"name": "checkUserExpBatch",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "out",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "ID",
+					"type": "uint256"
+				}
+			],
+			"name": "getUserTecLevel",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "out",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "list",
+					"type": "uint256[]"
+				}
+			],
+			"name": "getUserTecLevelBatch",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "out",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

@@ -1,0 +1,633 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "avatar",
+				"outputs": [
+					{
+						"internalType": "contract IProfilePhoto",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "battleInfo",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "info",
+						"type": "uint256[3]"
+					},
+					{
+						"internalType": "bool",
+						"name": "isDead",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "bullPenInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cattle",
+				"outputs": [
+					{
+						"internalType": "contract ICOW",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "compound",
+				"outputs": [
+					{
+						"internalType": "contract ICompound",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "targetId",
+						"type": "uint256[]"
+					}
+				],
+				"name": "compoundInfo",
+				"outputs": [
+					{
+						"internalType": "uint256[5]",
+						"name": "info",
+						"type": "uint256[5]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "cowInfoes",
+				"outputs": [
+					{
+						"internalType": "uint256[22]",
+						"name": "info1",
+						"type": "uint256[22]"
+					},
+					{
+						"internalType": "bool[3]",
+						"name": "info2",
+						"type": "bool[3]"
+					},
+					{
+						"internalType": "uint256[2]",
+						"name": "parents",
+						"type": "uint256[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "getUserProfilePhoto",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "item",
+				"outputs": [
+					{
+						"internalType": "contract ICattle1155",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mail",
+				"outputs": [
+					{
+						"internalType": "contract IMail",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "market",
+				"outputs": [
+					{
+						"internalType": "contract IMarket",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mating",
+				"outputs": [
+					{
+						"internalType": "contract IMating",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "milk",
+				"outputs": [
+					{
+						"internalType": "contract IMilk",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "planet",
+				"outputs": [
+					{
+						"internalType": "contract IPlanet",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "setCattle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setCompound",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "setItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setMail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setMarket",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setMating",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setMilk",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "setPlanet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "setProfilePhoto",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr_",
+						"type": "address"
+					}
+				],
+				"name": "setStable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stable",
+				"outputs": [
+					{
+						"internalType": "contract IStable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "userCenter",
+				"outputs": [
+					{
+						"internalType": "uint256[10]",
+						"name": "info",
+						"type": "uint256[10]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contract/info.sol": "Info"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0x652fee292f698d8dba81bf287cb71f1682f6483b67ebe601a5f7387dcfc30b34",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98c7bba29bcab7240cdaada7dd7cbe3529fec83314801270c46239e72a9e84d7",
+				"dweb:/ipfs/QmfHCc1KMygjXchXVwafWTkFjhbb2SQ3Cu5GzRTdV4CCCh"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+			"keccak256": "0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://88b812365459a042c2aab5c689ff723098e0e19cb372718d3dd028b3c406e4f6",
+				"dweb:/ipfs/QmTsLrMYzPjnB85pyAy85NNcBg64RPVueJARzwNg9xMyR1"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37e4df53c8d2e3c1062c1c7b2c17366db7de03bfd2559d340ca95c588aa49c2f",
+				"dweb:/ipfs/QmQ9vsG3o4wED3FRogiSUhdzJvZSjjYFtydzXvFEJtgZk4"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c",
+				"dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+			"keccak256": "0x398d3323c1932a5986bf36be7c57593e121e69d5db5b6574b4ee0d031443de37",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b268304e03daf22c349abe3c318bc6a6badd6542d62311716ab401eec745f78",
+				"dweb:/ipfs/QmNYy2sc2RoTjDhyT6HAibmeDGqfhDiDpsWRbHFHoGVHLr"
+			]
+		},
+		"contracts/contract/info.sol": {
+			"keccak256": "0xd586d5dfc3bdce38377e48fe854cac7d7316fcc3d0639b816fca4726670b3823",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c84d27b7a9ef0449478e8f004840ce447d8d5d1a243e54a7f80e0288dcbda598",
+				"dweb:/ipfs/QmQy8pYKPFXo8F4fFB1xcVEUCwQt8ZTDABGKmgfd15M9RU"
+			]
+		},
+		"contracts/interface/ICOW721.sol": {
+			"keccak256": "0xed3a980769b945c487ab7b7e8eb63dec918a4258a069b0fa6e39de3e4e1ae3cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0387087d334803fdca454b51d914069b76f937b976bc89ab46a9cd9f1ca3b833",
+				"dweb:/ipfs/QmVprjw2113cCYv5z6C4jjkPfJvuUuhZXKPzvZjrGD2NjC"
+			]
+		},
+		"contracts/interface/ICattle1155.sol": {
+			"keccak256": "0x586911a78f90320daceccdcb7d3163cef152e9a343e2332d27f555542316b2dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5b98748739434b65a1dceadc2bc87b552eae923cb09fc1c864d42b900563a8c",
+				"dweb:/ipfs/QmfJZSJPikqbJSAgGm9X9nu5gvs1jxfY1ZnwwSo5MvSfFg"
+			]
+		},
+		"contracts/interface/ICompound.sol": {
+			"keccak256": "0x81cb475e3963a2045e1686a30028d8d914e02fa2c67f412a0aaf82520551dc9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://009271443f1e2ea7967634f40174f82972f1e3430bca2a228dfdf808208ad994",
+				"dweb:/ipfs/QmPptBeTKUx5aWArLMVX2Q8fS5NfunjAgVa3GgvP3WjGws"
+			]
+		},
+		"contracts/interface/IMail.sol": {
+			"keccak256": "0x74fbf05b7f6fe62d0caa85b02ecbb75a66b79c7b5813a8317430efd54c238de5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8ad0f13088001a56d8b0e3a64bbb8c3fa89a819f0918d74f43c366a2802ad549",
+				"dweb:/ipfs/Qmd9Sf4txWTuPfzLwot1YFcTE8NdtQ4s8iDXC7SpyMjXoe"
+			]
+		},
+		"contracts/interface/IMarket.sol": {
+			"keccak256": "0x52316cb4facc2836e4230c8eaa2ae1552e36d11ccdb4d8e0d0ffb589f8f07337",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://138e7dd3836e7bf23472f1da9149adad1520c611f6527ec8b0db1b64606a1421",
+				"dweb:/ipfs/QmQ7bBBoUoY6gXNrfGLwhEFvqhNrbSgm4oFQWj1673GfJh"
+			]
+		},
+		"contracts/interface/IMating.sol": {
+			"keccak256": "0xe94e250406848376b42fb1f65c6d76a70378a8ceea858b811e280b867d09f25d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0a91c10baa9eb1e251cf03bd2eb6f7ff25821068b4be836c70f638d0fe962e68",
+				"dweb:/ipfs/QmexQTX9YqLriD4WKEM1hNNNLpT6huSVeW2B9n3f8gFWbf"
+			]
+		},
+		"contracts/interface/IPlanet.sol": {
+			"keccak256": "0xce81ab35d05468c68d5f0ca1c00ab0f1b35c185df28a471f4872322887e05e5f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e5d4a6e974ab20ad0fc1cb761b10f56815df8e628ed528adf6b7efc7e5b79aa5",
+				"dweb:/ipfs/QmZydShzDTVauhjhzrgfM1Fsywn4vUyE8fJ53cyuNR8pbq"
+			]
+		},
+		"contracts/interface/Iprofile_photo.sol": {
+			"keccak256": "0x6cf9a8d42663ff679a04f8d591b59dd0407c5d84637d38c8030a1705b8a1f3b8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c87b92db0e88f6aa01a2cdcdabca0d9701535b43dec67a74b1d2b502bcf0f47",
+				"dweb:/ipfs/Qmc7AYw7BSet8iWtjMQN6dkr2LuByyYPe7w5q3x9gzmDhU"
+			]
+		}
+	},
+	"version": 1
+}
